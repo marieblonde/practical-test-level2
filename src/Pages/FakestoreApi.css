@@ -3,3 +3,16 @@
     padding: 0;
     box-sizing: border-box;
 }
+.products{
+    display: grid;
+    grid-template-columns: repeat(4,1fr);
+    gap: 2em;
+    img{
+        width: 80%;
+        height: 100%;
+        object-fit: cover;
+    }
+    div{
+        height: 500px;
+    }
+}
