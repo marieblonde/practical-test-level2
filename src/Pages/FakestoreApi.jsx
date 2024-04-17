@@ -1,5 +1,6 @@
 import React, { useEffect, useState } from 'react';
 import axios from 'axios';
+import Navbar from '../Components/Navbar/Navbar'
 import './FakestoreApi'
 
 export default function Api() {
@@ -17,7 +18,9 @@ export default function Api() {
         getProduits();
     }, [])
     return (
+        
         <>
+            <Navbar/>
             {produits.map((produit, index) => {
                 return (<div>
                     <h3>{index}.{produit.title}</h3>
